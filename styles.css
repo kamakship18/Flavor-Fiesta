@@ -366,6 +366,7 @@ nav {
 }
 
 #random1 {
+  display: flex;
   width: 30vw;
   margin-left: auto;
   margin-right: auto;
@@ -375,7 +376,7 @@ nav {
 .random-img img {
   width: 100%;
   height: 50vh;
-  display: block;
+  display: flex;
 }
 
 .random-name {
@@ -384,4 +385,55 @@ nav {
 
 .random-name h2 {
   font-size: 1.4rem;
+}
+
+/* random-queries */
+@media screen and (min-width: 768px) {
+  #random1 {
+      display: flex;
+  }
+
+  .random-item {
+      margin: 0;
+  }
+
+  .random-details {
+      width: 700px;
+  }
+}
+
+footer {
+  background-color: #ee9898; 
+  color: #fff; 
+  padding: 20px 0;
+  text-align: center;
+}
+
+.footer-links {
+  display: flex;
+  justify-content: center;
+}
+
+.footer-link {
+  text-decoration: none;
+  color: #fff;
+  font-size: 20px;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.footer-link:hover {
+  color: #f00505; /* Change the color on hover */
+}
+
+/* Responsive styles for the footer */
+@media only screen and (max-width: 768px) {
+  .footer-links {
+      flex-direction: column;
+      align-items: center;
+  }
+
+  .footer-link {
+      margin-top: 10px;
+  }
 }
