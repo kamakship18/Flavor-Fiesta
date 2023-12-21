@@ -6,6 +6,7 @@
 //  event listeners
  searchBtn.addEventListener('click', getMealList);
  mealList.addEventListener('click', getMealRecipe);
+ console.log(recipeCloseBtn)
  recipeCloseBtn.addEventListener('click', () => {
     mealDetailsContent.parentElement.classList.remove('showRecipe');
 });
@@ -80,5 +81,37 @@ function getMealList() {
     mealDetailsContent.parentElement.classList.add('showRecipe');
  } 
 
+
+
  // random recipe part image
- 
+ function getRandomList() {
+     var randomList = document.getElementById('random1');
+    fetch(`https://www.themealdb.com/api/json/v1/1/random.php`)
+        .then((response) => { return response.json() })
+        .then((data1) => {
+            console.log(data1);
+            // let html = "";
+            // if(data1.meals){
+                // data1.meals.forEach(meal => {
+                    randomList.innerHTML += `
+                    <div class = "random-item" data-id = "${data1.meals[0].idMeal}" >
+                        <div class ="random-img">
+                            <img src = "${data1.meals[0].strMealThumb}" alt = "food" >
+                        </div>
+                        <div class = "random-name">
+                            <h2>${data1.meals[0].strMeal}</h2>
+                            <a href = "#" class = "recipe-btn">Get Recipe</a>
+                        </div>
+                    </div>
+                    `;
+                // });
+            // }else{
+            //     html = "Sorry, we didn't find any meal!";
+            //     random1.classList.add('notFound')
+            // }  
+            document.getElementById("random1").addEventListener('click', getMealRecipe);
+
+            // document.getElementById("random-item").addEventListener('click', getMealRecipe);
+        });
+}
+getRandomList() 
