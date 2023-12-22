@@ -438,3 +438,22 @@ footer {
   }
 }
 
+@media only screen and (max-width: 600px) {
+#random1{
+  display: flex;
+    width: 90vw;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 10vh;
+}
+
+.random-item{
+  width: 90vh;
+}
+.main{
+  flex-direction: column-reverse;
+}
+.main img{
+  width: 100vw;
+}
+}
