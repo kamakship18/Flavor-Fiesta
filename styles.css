@@ -451,9 +451,16 @@ footer {
   width: 90vh;
 }
 .main{
-  flex-direction: column-reverse;
+  flex-direction: column;
 }
 .main img{
   width: 100vw;
 }
+.main-text{
+  width: 100vw;
+}
+.sub-text{
+  width: 100vw;
+}
+
 }
