@@ -423,7 +423,7 @@ footer {
 }
 
 .footer-link:hover {
-  color: #f00505; /* Change the color on hover */
+  color: #f00505; 
 }
 
 /* Responsive styles for the footer */
@@ -437,3 +437,4 @@ footer {
       margin-top: 10px;
   }
 }
+
