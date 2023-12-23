@@ -2,6 +2,10 @@
 
 This repository contains the source code for a responsive recipe website created using HTML, CSS, and JavaScript. The website is designed to showcase delicious recipes with a user-friendly interface. This readme file provides information on how to set up the project, customize it.
 
+## Installation
+
+No installation is required! Simply click on the following link. - ( https://kamakship18.github.io/Flavor-Fiesta/ )
+
 ## Tech Stack
 
 - HTML: Used for creating the structure of the webpage
@@ -23,10 +27,6 @@ This repository contains the source code for a responsive recipe website created
 ![ff2!](./assests/ff2.png)
 ![ff3!](./assests/ff3.png)
 ![ff4!](./assests/ff4.png)
-
-## Installation
-
-No installation is required! Simply click on the following link. - ( https://kamakship18.github.io/Flavor-Fiesta/ )
 
 ## Future Improvements
 
